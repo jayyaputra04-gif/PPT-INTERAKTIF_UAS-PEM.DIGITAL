@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pancasila Ada Dalam Diriku</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="start-screen" class="screen start-screen active" aria-labelledby="start-title">
+      <div class="corner-logo-strip" aria-label="Logo program dan kampus">
+        <img src="assets/logos/berdampak.png" alt="Berdampak logo">
+        <img src="assets/logos/logokampus.png" alt="Logo kampus">
+        <img src="assets/logos/tutwuri.png" alt="Tut Wuri Handayani logo">
+      </div>
+
+      <img class="start-character start-character-left" src="assets/Murid Laki laki.png" alt="" aria-hidden="true">
+      <img class="start-character start-character-right" src="assets/murid perempuan.png" alt="" aria-hidden="true">
+      <div class="start-content">
+        <h1 id="start-title" class="sr-only">Pancasila ada dalam diriku</h1>
+        <img class="start-title-image" src="assets/teks.png" alt="Pancasila ada dalam diriku">
+        <button class="image-button start-button" type="button" data-go="profile-screen" aria-label="Start">
+          <img src="assets/Tombol Start.png" alt="">
+        </button>
+      </div>
+    </section>
+
+    <section id="profile-screen" class="screen profile-screen" aria-labelledby="profile-title">
+      <header class="lesson-header">
+        <div>
+          <p class="eyebrow">Profil Pengembang</p>
+          <h2 id="profile-title">Tim Pengembang</h2>
+          <p>Media pembelajaran ini dikembangkan untuk membantu siswa memahami nilai-nilai Pancasila dengan cara yang menyenangkan.</p>
+        </div>
+        <button class="ghost-button" type="button" data-go="start-screen">Menu</button>
+      </header>
+
+      <section class="developer-grid" aria-label="Daftar profil pengembang">
+        <article class="developer-card">
+          <img src="assets/Ida.jpeg" alt="Foto Ida">
+          <h3>Ida Bagus Yoga Swadnyana, S.Pd., M.Pd.</h3>
+          <p>NIR 1999052720230801048</p>
+          <p>Dosen Pengampu</p>
+        </article>
+        <article class="developer-card">
+          <img src="assets/Niluh.jpeg" alt="Foto I Made">
+          <h3>Ni Luh Putu Agetania, S.Pd., M.Pd.</h3>
+          <p>NIP 199004142023212054</p>
+          <p>Dosen Pengampu</p>
+        </article>
+        <article class="developer-card">
+          <img src="assets/Niketut.jpeg" alt="Foto Ni Ketut">
+          <h3>Ni Ketut Rai Laraningsih</h3>
+          <p>NIM 2311031179</p>
+          <p>Pengembang</p>
+        </article>
+        <article class="developer-card">
+          <img src="assets/Imade.jpeg" alt="Foto Ni Luh">
+          <h3>I Made Riki Nanjaya diputra</h3>
+          <p>NIM 2311031121</p>
+          <p>Pengembang</p>
+        </article>
+      </section>
+
+      <div class="profile-actions">
+        <button class="primary-button" type="button" data-go="main-menu-screen">Lanjut ke Menu Utama</button>
+      </div>
+    </section>
+
+    <section id="main-menu-screen" class="screen main-menu-screen" aria-labelledby="main-menu-title">
+      <header class="main-menu-board">
+        <h2 id="main-menu-title">Menu Utama</h2>
+      </header>
+
+      <section class="main-menu-grid" aria-label="Menu utama aplikasi">
+        <button class="main-menu-card menu-card-orange" type="button" data-go="objectives-screen">
+          <img src="assets/Lambang bintang_.png" alt="" aria-hidden="true">
+          <span>Tujuan Pembelajaran</span>
+        </button>
+        <button class="main-menu-card menu-card-blue" type="button" data-go="instructions-screen">
+          <span class="menu-symbol">?</span>
+          <span>Petunjuk Penggunaan</span>
+        </button>
+        <button class="main-menu-card menu-card-green" type="button" data-go="lesson-screen">
+          <img src="assets/Lambang pancasila_.png" alt="" aria-hidden="true">
+          <span>Materi</span>
+        </button>
+        <button class="main-menu-card menu-card-yellow" type="button" data-go="quiz-screen">
+          <span class="menu-symbol">?</span>
+          <span>Kuis</span>
+        </button>
+        <button class="main-menu-card menu-card-purple menu-card-wide" type="button" data-go="references-screen">
+          <span class="menu-symbol">S</span>
+          <span>Referensi</span>
+        </button>
+      </section>
+    </section>
+
+    <section id="objectives-screen" class="screen info-screen" aria-labelledby="objectives-title">
+      <header class="lesson-header">
+        <div>
+          <p class="eyebrow">Tujuan Pembelajaran</p>
+          <h2 id="objectives-title">Setelah belajar, siswa mampu...</h2>
+        </div>
+        <button class="ghost-button" type="button" data-go="main-menu-screen">Menu Utama</button>
+      </header>
+
+      <section class="info-card">
+        <ul>
+          <li>Mengenal Burung Garuda dan lima lambang Pancasila.</li>
+          <li>Menjelaskan makna setiap sila Pancasila dengan bahasa sederhana.</li>
+          <li>Memberi contoh sikap yang mencerminkan nilai Pancasila.</li>
+          <li>Mengenal sejarah singkat perumusan Pancasila.</li>
+          <li>Mengenal tokoh-tokoh yang berperan dalam perumusan Pancasila.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="instructions-screen" class="screen info-screen" aria-labelledby="instructions-title">
+      <header class="lesson-header">
+        <div>
+          <p class="eyebrow">Petunjuk Penggunaan</p>
+          <h2 id="instructions-title">Cara Menggunakan Media</h2>
+        </div>
+        <button class="ghost-button" type="button" data-go="main-menu-screen">Menu Utama</button>
+      </header>
+
+      <section class="info-card">
+        <ol>
+          <li>Tekan tombol pada Menu Utama sesuai bagian yang ingin dipelajari.</li>
+          <li>Buka Materi untuk mempelajari setiap subbab melalui bacaan dan video.</li>
+          <li>Gunakan tombol panah untuk berpindah dari satu subbab ke subbab berikutnya.</li>
+          <li>Pilih Kuis untuk menguji pemahaman setelah belajar.</li>
+          <li>Buka Referensi dari Menu Utama untuk melihat sumber konten.</li>
+        </ol>
+      </section>
+    </section>
+
+    <section id="lesson-screen" class="screen lesson-screen" aria-labelledby="lesson-title">
+      <header class="lesson-header">
+        <div>
+          <p class="eyebrow">Bab Pembelajaran</p>
+          <h2 id="lesson-title">Pancasila ada dalam diriku</h2>
+        </div>
+        <button class="ghost-button" type="button" data-go="main-menu-screen">Menu</button>
+      </header>
+
+      <p class="progress-text" id="progress-text">Subbab 1 dari 4</p>
+
+      <article class="subchapter active" id="subchapter-one" data-step="0">
+        <div class="material-stack">
+          <div class="video-panel">
+            <video controls preload="metadata" poster="assets/video-poster.svg">
+              <source src="videos/subbab-1.mp4" type="video/mp4">
+              Browser tidak mendukung pemutar video. Letakkan video offline di folder videos dengan nama subbab-1.mp4.
+            </video>
+          </div>
+          <div class="material-text">
+            <p class="chapter-label">Subbab 1</p>
+            <h3>Mengenal Burung Garuda dan Lima Lambang Pancasila</h3>
+            <p>Burung Garuda adalah lambang negara Indonesia. Lambang lengkapnya disebut Garuda Pancasila. Di dada burung Garuda terdapat perisai yang berisi lima lambang Pancasila. Setiap lambang memiliki arti yang berbeda-beda. Lambang tersebut menggambarkan nilai yang harus diterapkan dalam kehidupan sehari-hari.</p>
+            <p>Burung Garuda dipilih karena melambangkan kekuatan dan keberanian. Sayap Garuda yang terbentang menunjukkan semangat bangsa Indonesia. Lima lambang di dalam perisai mewakili lima sila dalam Pancasila. Dengan memahami lambang-lambang tersebut, kita dapat lebih mudah memahami arti Pancasila.</p>
+
+            <h4>Sila Pertama - Bintang</h4>
+            <p>Lambang sila pertama adalah bintang emas. Bintang emas berada di tengah perisai berwarna hitam. Bintang melambangkan cahaya Tuhan yang menerangi kehidupan manusia. Warna hitam pada perisai berarti Tuhan adalah sumber dari segala sesuatu.</p>
+            <p>Sila pertama berbunyi "Ketuhanan Yang Maha Esa." Lambang ini mengajarkan kita untuk percaya dan bertakwa kepada Tuhan. Kita juga harus rajin beribadah sesuai agama masing-masing, menghormati teman yang berbeda agama, dan tidak memaksa orang lain mengikuti keyakinan kita.</p>
+
+            <h4>Sila Kedua - Rantai</h4>
+            <p>Lambang sila kedua adalah rantai emas. Rantai terdiri dari bentuk lingkaran dan persegi panjang. Bentuk lingkaran melambangkan perempuan, sedangkan persegi panjang melambangkan laki-laki. Semua mata rantai saling terhubung satu sama lain.</p>
+            <p>Sila kedua berbunyi "Kemanusiaan yang Adil dan Beradab." Lambang rantai mengajarkan kita untuk saling menghormati sesama manusia, tidak membeda-bedakan teman, serta peduli dan menolong orang yang membutuhkan bantuan.</p>
+
+            <h4>Sila Ketiga - Pohon Beringin</h4>
+            <p>Lambang sila ketiga adalah pohon beringin. Pohon beringin memiliki batang yang besar dan akar yang kuat. Akar yang menjalar melambangkan banyaknya suku dan budaya di Indonesia. Walaupun berbeda-beda, semuanya tetap bersatu sebagai bangsa Indonesia.</p>
+            <p>Sila ketiga berbunyi "Persatuan Indonesia." Pohon beringin juga sering digunakan sebagai tempat berteduh. Hal ini berarti Indonesia menjadi tempat tinggal bagi seluruh rakyatnya. Lambang ini mengajarkan kita untuk menjaga persatuan dan tidak mudah terpecah belah.</p>
+
+            <h4>Sila Keempat - Banteng</h4>
+            <p>Lambang sila keempat adalah kepala banteng. Banteng adalah hewan yang suka hidup berkumpul bersama kelompoknya. Karena itu, banteng melambangkan musyawarah dan kebersamaan.</p>
+            <p>Sila keempat berbunyi "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan." Lambang ini mengajarkan kita untuk berdiskusi saat mengambil keputusan bersama, mendengarkan pendapat orang lain, dan tidak memaksakan kehendak sendiri.</p>
+
+            <h4>Sila Kelima - Padi dan Kapas</h4>
+            <p>Lambang sila kelima adalah padi dan kapas. Padi melambangkan makanan atau kebutuhan pangan. Kapas melambangkan pakaian atau kebutuhan sandang. Kedua lambang ini menunjukkan bahwa semua rakyat Indonesia berhak hidup sejahtera.</p>
+            <p>Sila kelima berbunyi "Keadilan Sosial bagi Seluruh Rakyat Indonesia." Lambang ini mengajarkan kita untuk bersikap adil kepada semua orang, membantu teman yang membutuhkan, tidak pilih kasih, dan memberikan hak yang sama kepada semua orang.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="subchapter" id="subchapter-two" data-step="1">
+        <div class="material-stack">
+          <div class="video-panel">
+            <video controls preload="metadata" poster="assets/video-poster.svg">
+              <source src="videos/subbab-2.mp4" type="video/mp4">
+              Browser tidak mendukung pemutar video. Letakkan video offline di folder videos dengan nama subbab-2.mp4.
+            </video>
+          </div>
+          <div class="material-text">
+            <p class="chapter-label">Subbab 2</p>
+            <h3>Sikap dan Perilaku yang Mencerminkan Pengamalan</h3>
+            <h4>Pentingnya Memahami Nilai-Nilai Pancasila</h4>
+            <p>Pancasila adalah dasar negara Indonesia. Pancasila menjadi pedoman bagi seluruh rakyat Indonesia dalam kehidupan sehari-hari. Nilai-nilai Pancasila harus dipahami sejak kecil agar kita menjadi anak yang baik.</p>
+            <p>Dengan memahami Pancasila, kita dapat hidup rukun dengan teman dan masyarakat. Pancasila juga mengajarkan kita untuk saling menghormati dan tolong-menolong. Contoh sikap yang sesuai dengan Pancasila adalah jujur, disiplin, dan menghargai orang lain.</p>
+            <p>Kita harus menerapkan nilai Pancasila di rumah, sekolah, dan lingkungan sekitar. Jika semua orang menerapkan nilai Pancasila, kehidupan akan menjadi damai dan nyaman.</p>
+
+            <h4>Nilai Sila Pertama - Ketuhanan</h4>
+            <p>Sila pertama berbunyi "Ketuhanan Yang Maha Esa." Sila ini mengajarkan bahwa kita harus percaya kepada Tuhan. Setiap orang memiliki agama yang berbeda-beda dan harus dihormati.</p>
+            <p>Kita harus rajin beribadah sesuai agama masing-masing, tidak mengejek agama teman lain, dan menghormati teman yang sedang beribadah. Contoh pengamalan sila pertama adalah berdoa sebelum belajar dan membantu teman tanpa melihat agamanya.</p>
+
+            <h4>Nilai Sila Kedua - Kemanusiaan</h4>
+            <p>Sila kedua berbunyi "Kemanusiaan yang Adil dan Beradab." Sila ini mengajarkan kita untuk bersikap baik kepada sesama. Kita harus menghormati semua orang tanpa membeda-bedakan teman karena semua manusia memiliki hak yang sama.</p>
+            <p>Contoh sikap yang sesuai sila kedua adalah membantu teman yang kesusahan, berbicara dengan sopan, tidak membully atau mengejek teman, bekerja sama, saling membantu, dan mengikuti kegiatan kerja bakti.</p>
+
+            <h4>Nilai Sila Ketiga - Persatuan</h4>
+            <p>Sila ketiga berbunyi "Persatuan Indonesia." Sila ini mengajarkan kita untuk menjaga persatuan dan kesatuan. Indonesia memiliki banyak suku, agama, dan budaya yang berbeda. Walaupun berbeda, kita harus tetap berteman dan hidup rukun.</p>
+            <p>Contoh pengamalan sila ketiga adalah bermain bersama tanpa memilih-milih teman, bangga menggunakan budaya Indonesia, mengikuti upacara bendera dengan tertib, serta menjaga kerukunan di lingkungan sekolah dan rumah.</p>
+
+            <h4>Nilai Sila Keempat - Kerakyatan</h4>
+            <p>Sila keempat berbunyi "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan." Sila ini mengajarkan kita untuk bermusyawarah saat mengambil keputusan bersama.</p>
+            <p>Musyawarah dilakukan agar semua orang dapat menyampaikan pendapatnya. Kita harus mendengarkan pendapat teman dengan baik, tidak memaksakan kehendak, dan menerima keputusan dengan lapang dada.</p>
+
+            <h4>Nilai Sila Kelima - Keadilan</h4>
+            <p>Sila kelima berbunyi "Keadilan Sosial bagi Seluruh Rakyat Indonesia." Sila ini mengajarkan kita untuk berlaku adil kepada semua orang. Kita tidak boleh pilih kasih kepada teman karena semua orang harus mendapatkan hak yang sama.</p>
+            <p>Contoh pengamalan sila kelima adalah membagi tugas kelompok secara adil, menghormati hak milik orang lain, tidak mengambil barang tanpa izin, bersikap jujur dan bertanggung jawab, serta menolong teman yang membutuhkan bantuan.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="subchapter" id="subchapter-three" data-step="2">
+        <div class="material-stack">
+          <div class="video-panel">
+            <video controls preload="metadata" poster="assets/video-poster.svg">
+              <source src="videos/subbab-3.mp4" type="video/mp4">
+              Browser tidak mendukung pemutar video. Letakkan video offline di folder videos dengan nama subbab-3.mp4.
+            </video>
+          </div>
+          <div class="material-text">
+            <p class="chapter-label">Subbab 3</p>
+            <h3>Sejarah Perumusan Pancasila</h3>
+            <h4>Pendahuluan dan Pembentukan BPUPKI</h4>
+            <p>Sebelum Indonesia merdeka, Jepang membentuk sebuah badan yang bernama BPUPKI. BPUPKI adalah singkatan dari Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan Indonesia. Badan ini dibentuk untuk mempersiapkan kemerdekaan Indonesia.</p>
+            <p>Sidang pertama BPUPKI dimulai pada tanggal 29 Mei 1945. Dalam sidang tersebut, para tokoh bangsa membahas dasar negara Indonesia. Tiga tokoh penting yang menyampaikan pendapat adalah Muhammad Yamin, Supomo, dan Ir. Soekarno.</p>
+            <p>Para tokoh berdiskusi dengan sungguh-sungguh demi masa depan Indonesia. Mereka ingin Indonesia memiliki dasar negara yang baik untuk seluruh rakyat. Oleh karena itu, pembentukan BPUPKI menjadi langkah penting dalam sejarah lahirnya Pancasila.</p>
+
+            <h4>Usulan Rumusan Dasar Negara oleh Tokoh</h4>
+            <p>Dalam sidang BPUPKI, beberapa tokoh menyampaikan usulan tentang dasar negara Indonesia. Muhammad Yamin mengusulkan dasar negara yang berisi persatuan, kerakyatan, dan kesejahteraan rakyat. Ia ingin Indonesia menjadi negara yang bersatu dan adil bagi semua rakyat.</p>
+            <p>Tokoh berikutnya adalah Supomo. Supomo menekankan pentingnya kekeluargaan, musyawarah, dan keadilan sosial. Menurutnya, rakyat Indonesia harus hidup saling membantu seperti keluarga.</p>
+            <p>Setelah itu, Ir. Soekarno menyampaikan pidato tentang lima dasar negara. Lima dasar tersebut kemudian dikenal dengan nama Pancasila. Usulan dari para tokoh menunjukkan rasa cinta mereka kepada Indonesia dan semangat persatuan.</p>
+
+            <h4>Pembentukan Panitia Sembilan dan Piagam Jakarta</h4>
+            <p>Setelah sidang BPUPKI, dibentuklah Panitia Sembilan. Panitia ini bertugas merumuskan dasar negara Indonesia. Panitia Sembilan terdiri dari sembilan tokoh penting Indonesia yang bekerja sama untuk menyusun rumusan dasar negara yang terbaik.</p>
+            <p>Pada tanggal 22 Juni 1945, Panitia Sembilan menghasilkan Piagam Jakarta. Piagam Jakarta berisi rumusan lima sila sebagai dasar negara. Sila pertama dalam Piagam Jakarta berbunyi "Ketuhanan dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya."</p>
+            <p>Para tokoh berdiskusi dengan penuh tanggung jawab saat menyusun rumusan tersebut. Mereka ingin dasar negara dapat diterima oleh seluruh rakyat Indonesia.</p>
+
+            <h4>Pembentukan PPKI dan Perubahan Rumusan Pancasila</h4>
+            <p>Setelah tugas BPUPKI selesai, badan tersebut dibubarkan. Kemudian dibentuklah PPKI yang merupakan singkatan dari Panitia Persiapan Kemerdekaan Indonesia. PPKI bertugas mempersiapkan kemerdekaan Indonesia dan mengesahkan dasar negara.</p>
+            <p>Pada tanggal 18 Agustus 1945, PPKI secara resmi menetapkan Pancasila sebagai dasar negara Indonesia. Dalam sidang tersebut, sila pertama mengalami perubahan menjadi "Ketuhanan Yang Maha Esa."</p>
+            <p>Perubahan ini dilakukan agar seluruh rakyat Indonesia yang memiliki agama berbeda dapat merasa dihargai. Para tokoh bangsa menunjukkan sikap toleransi, saling menghormati, dan lebih mengutamakan persatuan bangsa.</p>
+
+            <h4>Nilai-Nilai Juang dalam Proses Perumusan Pancasila</h4>
+            <p>Dalam proses perumusan Pancasila terdapat banyak nilai baik yang dapat diteladani. Salah satu nilai penting adalah persatuan. Para tokoh bangsa tetap bersatu walaupun memiliki pendapat yang berbeda.</p>
+            <p>Mereka juga memiliki sikap ikhlas demi kepentingan bangsa Indonesia, berani menyampaikan pendapat, menghormati perbedaan agama dan pendapat, serta bermusyawarah untuk mencari keputusan terbaik bersama.</p>
+            <p>Semangat kerja sama dan cinta tanah air sangat terlihat dalam proses perumusan Pancasila. Nilai-nilai tersebut harus dicontoh oleh generasi muda dalam kehidupan sehari-hari.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="subchapter" id="subchapter-four" data-step="3">
+        <div class="material-stack">
+          <div class="video-panel">
+            <video controls preload="metadata" poster="assets/video-poster.svg">
+              <source src="videos/subbab-4.mp4" type="video/mp4">
+              Browser tidak mendukung pemutar video. Letakkan video offline di folder videos dengan nama subbab-4.mp4.
+            </video>
+          </div>
+          <div class="material-text">
+            <p class="chapter-label">Subbab 4</p>
+            <h3>Mengenal Para Perumus Pancasila</h3>
+            <h4>Pengantar Mengenal Tokoh Perumus Pancasila</h4>
+            <p>Pancasila adalah dasar negara Indonesia yang dirumuskan oleh para tokoh bangsa. Para tokoh tersebut bekerja keras agar Indonesia memiliki pedoman dalam kehidupan berbangsa dan bernegara.</p>
+            <p>Mereka berdiskusi dan bermusyawarah untuk mencari rumusan yang terbaik bagi seluruh rakyat Indonesia. Walaupun memiliki pendapat yang berbeda, mereka tetap menjaga persatuan. Sikap saling menghormati dan bekerja sama membuat mereka berhasil merumuskan Pancasila.</p>
+            <p>Kita sebagai generasi muda harus mengenal jasa para tokoh tersebut. Oleh karena itu, penting bagi kita untuk mempelajari dan meneladani sikap para perumus Pancasila.</p>
+
+            <h4>Ir. Soekarno</h4>
+            <p>Ir. Soekarno adalah salah satu tokoh penting dalam perumusan Pancasila. Beliau juga dikenal sebagai Presiden pertama Indonesia. Ir. Soekarno menyampaikan gagasan tentang Pancasila dalam sidang BPUPKI pada tanggal 1 Juni 1945.</p>
+            <p>Karena jasanya, beliau dikenal sebagai penggali Pancasila. Ir. Soekarno memiliki sifat berani, cinta persatuan, pandai berbicara di depan banyak orang, dan selalu semangat memperjuangkan kemerdekaan Indonesia.</p>
+            <p>Sikap pantang menyerah beliau patut kita contoh. Oleh karena itu, kita harus belajar menjadi anak yang berani, semangat, dan cinta tanah air seperti Ir. Soekarno.</p>
+
+            <h4>Dr. Muhammad Hatta</h4>
+            <p>Dr. Muhammad Hatta adalah Wakil Presiden pertama Indonesia. Beliau sering dipanggil Bung Hatta. Muhammad Hatta dikenal sebagai tokoh yang jujur, sederhana, dan suka berdiskusi untuk mencari solusi terbaik.</p>
+            <p>Dalam perumusan Pancasila, Bung Hatta ikut membantu mengambil keputusan penting. Salah satu jasanya adalah membantu mengubah sila pertama agar dapat diterima semua rakyat Indonesia.</p>
+            <p>Beliau sangat menghargai perbedaan dan mengutamakan persatuan bangsa. Oleh karena itu, kita harus belajar menjadi anak yang jujur, rajin, dan suka menghargai pendapat orang lain seperti Bung Hatta.</p>
+
+            <h4>Muhammad Yamin</h4>
+            <p>Muhammad Yamin adalah salah satu tokoh yang ikut merumuskan dasar negara Indonesia. Beliau dikenal sebagai ahli sejarah dan hukum. Muhammad Yamin juga seorang penulis yang kreatif dan pintar.</p>
+            <p>Dalam sidang BPUPKI, beliau menyampaikan usulan tentang dasar negara Indonesia. Muhammad Yamin sangat mencintai tanah air dan selalu memikirkan masa depan Indonesia agar menjadi negara yang maju.</p>
+            <p>Sikap nasionalis dan semangat belajar beliau sangat baik untuk dicontoh. Oleh karena itu, kita harus rajin belajar dan mencintai tanah air.</p>
+
+            <h4>Prof. Dr. Supomo</h4>
+            <p>Prof. Dr. Supomo adalah tokoh penting dalam perumusan dasar negara Indonesia. Beliau dikenal sebagai Bapak Konstitusi Indonesia. Supomo memiliki pemikiran yang dalam dan selalu memikirkan kepentingan rakyat.</p>
+            <p>Dalam sidang BPUPKI, beliau menyampaikan gagasan tentang negara yang berdasarkan kekeluargaan. Menurut Supomo, rakyat Indonesia harus hidup rukun dan saling membantu. Beliau juga mendukung musyawarah untuk mengambil keputusan bersama.</p>
+            <p>Kita dapat meneladani sikap suka menolong dan cinta persatuan dari Supomo. Oleh karena itu, kita harus hidup rukun dan saling membantu sesama teman.</p>
+
+            <h4>Kiai Haji Abdul Wahid Hasyim</h4>
+            <p>Kiai Haji Abdul Wahid Hasyim adalah tokoh agama yang ikut dalam perumusan dasar negara Indonesia. Beliau dikenal sebagai orang yang bijaksana dan menghormati perbedaan.</p>
+            <p>Wahid Hasyim selalu mengutamakan persatuan bangsa Indonesia. Beliau memahami bahwa Indonesia memiliki banyak agama dan budaya yang berbeda, sehingga beliau mendukung sikap toleransi antarumat beragama.</p>
+            <p>Selain itu, Wahid Hasyim juga peduli terhadap pendidikan dan ilmu pengetahuan. Kita perlu meneladani sikap bijaksana, toleransi, dan saling menghormati seperti Kiai Haji Abdul Wahid Hasyim.</p>
+          </div>
+        </div>
+      </article>
+
+      <nav class="chapter-nav" aria-label="Navigasi subbab">
+        <button class="image-button nav-image-button" id="prev-chapter" type="button" aria-label="Sebelumnya">
+          <img src="assets/Tombol back.png" alt="">
+        </button>
+        <button class="image-button nav-image-button" id="next-chapter" type="button" aria-label="Berikutnya">
+          <img src="assets/Tombol next.png" alt="">
+        </button>
+      </nav>
+    </section>
+
+    <section id="quiz-screen" class="screen quiz-screen" aria-labelledby="quiz-title">
+      <header class="lesson-header">
+        <div>
+          <p class="chapter-label">Evaluasi</p>
+          <h3 id="quiz-title">Pilih Jenis Kuis</h3>
+          <p>Pilih kuis offline untuk langsung bermain di aplikasi, atau gunakan Quizizz Paper Mode bersama guru.</p>
+        </div>
+        <button class="ghost-button" type="button" data-go="main-menu-screen">Menu</button>
+      </header>
+
+      <section class="quiz-mode-grid" aria-label="Pilihan jenis kuis">
+        <button class="quiz-mode-card" type="button" data-go="offline-quiz-screen">
+          <span class="mode-badge">1</span>
+          <span class="mode-title">Kuis Offline</span>
+          <span class="mode-copy">Soal dibuat di aplikasi dan bisa dijawab langsung.</span>
+        </button>
+        <button class="quiz-mode-card" type="button" data-go="paper-quiz-screen">
+          <span class="mode-badge">2</span>
+          <span class="mode-title">Quizizz Paper Mode</span>
+          <span class="mode-copy">Masuk Quizizz dengan kode, lalu jawab memakai kertas pilihan.</span>
+        </button>
+      </section>
+    </section>
+
+    <section id="offline-quiz-screen" class="screen quiz-screen" aria-labelledby="offline-quiz-title">
+      <header class="lesson-header">
+        <div>
+          <p class="chapter-label">Kuis Offline</p>
+          <h3 id="offline-quiz-title">Panggung Kuis</h3>
+          <p>Pilih jawaban terbaik seperti acara kuis di TV.</p>
+        </div>
+        <button class="ghost-button" type="button" data-go="quiz-screen">Pilihan Kuis</button>
+      </header>
+
+      <section id="offline-quiz-panel" class="quiz-section quiz-panel tv-quiz-panel active" aria-live="polite">
+        <div class="tv-score-row">
+          <p class="quiz-counter" id="offline-quiz-counter">1 dari 10</p>
+          <p class="quiz-feedback" id="offline-quiz-feedback" role="status"></p>
+        </div>
+        <div class="offline-quiz-intro tv-question-stage">
+          <h3 id="offline-question-title">Pertanyaan 1</h3>
+          <p id="offline-question-text">Memuat pertanyaan...</p>
+        </div>
+        <div class="offline-quiz-card">
+          <div class="answer-list" id="offline-answer-list"></div>
+          <button class="primary-button" id="offline-next-button" type="button">Jawab</button>
+        </div>
+      </section>
+
+      <section id="offline-result-panel" class="quiz-section quiz-panel result-panel" aria-live="polite">
+        <div>
+          <p class="chapter-label">Hasil Kuis</p>
+          <h3 id="offline-result-title">Nilai Kamu</h3>
+          <p id="offline-result-message">Kamu sudah menyelesaikan kuis offline.</p>
+        </div>
+        <div class="result-actions">
+          <div class="score-bubble" id="offline-score">0/0</div>
+          <button class="primary-button" id="retry-offline-quiz" type="button">Ulangi Kuis</button>
+          <button class="ghost-button" type="button" data-go="thanks-screen">Selesai</button>
+        </div>
+      </section>
+    </section>
+
+    <section id="paper-quiz-screen" class="screen quiz-screen" aria-labelledby="paper-quiz-title">
+      <header class="lesson-header">
+        <div>
+          <p class="chapter-label">Quizizz Paper Mode</p>
+          <h3 id="paper-quiz-title">Masuk Quizizz</h3>
+          <p>Isi nama terlebih dahulu, lalu buka Quizizz dengan kode permainan.</p>
+        </div>
+        <button class="ghost-button" type="button" data-go="quiz-screen">Pilihan Kuis</button>
+      </header>
+
+      <section id="paper-quiz-panel" class="quiz-section">
+        <div>
+          <p class="chapter-label">Quizizz Paper Mode</p>
+          <h3>Masuk bersama guru</h3>
+          <p>Gunakan kode permainan di bawah ini. Guru dapat menjalankan mode kertas dari Quizizz, lalu siswa menjawab memakai kartu jawaban.</p>
+        </div>
+        <form id="quiz-form" class="quiz-form">
+          <label for="student-name">Nama</label>
+          <input id="student-name" name="student-name" type="text" placeholder="Tulis nama kamu" autocomplete="name" required>
+          <label for="quizizz-code">Kode Quizizz</label>
+          <input id="quizizz-code" name="quizizz-code" type="text" value="123456" readonly>
+          <button class="primary-button" type="submit">Buka Quizizz</button>
+        </form>
+      </section>
+    </section>
+
+    <section id="thanks-screen" class="screen thanks-screen" aria-labelledby="thanks-title">
+      <div class="thanks-card">
+        <p class="eyebrow">Selesai</p>
+        <h2 id="thanks-title">Terima kasih sudah belajar</h2>
+        <p id="thanks-message">Semoga nilai Pancasila semakin terlihat dalam dirimu setiap hari.</p>
+        <button class="primary-button" type="button" data-go="main-menu-screen">Kembali ke Menu</button>
+      </div>
+    </section>
+
+    <section id="references-screen" class="screen references-screen" aria-labelledby="references-title">
+      <button class="ghost-button source-back-button" type="button" data-go="main-menu-screen">Menu Utama</button>
+
+      <section class="source-board" aria-label="Daftar sumber konten dan pengembangan">
+        <header class="source-title-plaque">
+          <h2 id="references-title">Source</h2>
+        </header>
+
+        <div class="source-logo-grid">
+          <div class="source-tile source-canva">
+            <img class="source-logo source-logo-round" src="assets/logos/canva.svg" alt="Canva logo">
+            <small>Desain media</small>
+          </div>
+          <div class="source-tile source-code">
+            <img class="source-logo source-logo-shield" src="assets/logos/html5.svg" alt="HTML5 logo">
+            <small>Struktur website</small>
+          </div>
+          <div class="source-tile source-code">
+            <img class="source-logo source-logo-shield" src="assets/logos/css3.svg" alt="CSS3 logo">
+            <small>Tampilan website</small>
+          </div>
+          <div class="source-tile source-code">
+            <img class="source-logo source-logo-square" src="assets/logos/javascript.svg" alt="JavaScript logo">
+            <small>Interaksi website</small>
+          </div>
+          <a class="source-tile source-flip" href="https://online.fliphtml5.com/pjiut/ecmr/" target="_blank" rel="noopener noreferrer">
+            <img class="source-logo source-logo-wide" src="assets/logos/image.png" alt="FlipHTML5 logo">
+            <small>Buku PKn kelas 4</small>
+          </a>
+          <div class="source-tile source-quizizz">
+            <img class="source-logo source-logo-wide" src="assets/logos/quizizz.svg" alt="Quizizz logo">
+            <small>Kuis Paper Mode</small>
+          </div>
+          <a class="source-tile source-youtube" href="https://youtu.be/qD339HjXGBk?si=96Oj5y-TYczFyFOG" target="_blank" rel="noopener noreferrer">
+            <img class="source-logo source-logo-youtube" src="assets/logos/youtube.svg" alt="YouTube logo">
+            <small>Majalah Bobo</small>
+          </a>
+          <a class="source-tile source-youtube" href="https://youtu.be/hgkJfylbJ0Q?si=ZPz4Q3OgfZ43-t77" target="_blank" rel="noopener noreferrer">
+            <img class="source-logo source-logo-youtube" src="assets/logos/youtube.svg" alt="YouTube logo">
+            <small>Guru Belajar86</small>
+          </a>
+          <a class="source-tile source-youtube" href="https://youtu.be/LEx-SmisWWk?si=5qh2d9_lgZJ0LBnw" target="_blank" rel="noopener noreferrer">
+            <img class="source-logo source-logo-youtube" src="assets/logos/youtube.svg" alt="YouTube logo">
+            <small>eduship</small>
+          </a>
+          <a class="source-tile source-youtube wide-source" href="https://youtu.be/ZlX2cATcbyg?si=l0k7eO-Lc4zUGcHX" target="_blank" rel="noopener noreferrer">
+            <img class="source-logo source-logo-youtube" src="assets/logos/youtube.svg" alt="YouTube logo">
+            <small>Majalah Bobo - Pengamalan Pancasila</small>
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
